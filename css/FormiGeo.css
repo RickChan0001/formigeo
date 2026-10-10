@@ -607,42 +607,6 @@ body {
     object-fit: contain;
 }
 
-/* Botões de navegação */
-.slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(28, 28, 28, 0.6);
-    color: #FFD700;
-    border: 2px solid #DAA520;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 10;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    font-family: 'Inter', sans-serif;
-}
-
-.hero-slideshow:hover .slide-btn {
-    opacity: 1;
-}
-
-.slide-btn:hover {
-    background: linear-gradient(135deg, #DAA520, #FFD700);
-    color: #1C1C1C;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-}
-
-.slide-prev { left: 15px; }
-.slide-next { right: 15px; }
-
 /* Indicadores (bolinhas douradas) */
 .slide-indicadores {
     position: absolute;
