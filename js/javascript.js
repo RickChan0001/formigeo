@@ -38,18 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
     /* ======================================================
        2) SLIDESHOW AUTOMÁTICO DO HERO
        ====================================================== */
-    const slides      = document.querySelectorAll('.hero-slideshow img');
+    const slides      = document.querySelectorAll('.hero-slideshow .slide');
     const indicadores = document.querySelectorAll('.slide-indicadores span');
     const btnPrev     = document.querySelector('.slide-prev');
     const btnNext     = document.querySelector('.slide-next');
     const container   = document.querySelector('.hero-slideshow');
 
-    // Se essa página não tem slideshow, encerra esta parte sem erro
+    // Se essa página não tem slideshow, encerra sem erro
     if (!container || slides.length === 0) return;
 
     let indice = 0;
     let timer  = null;
-    const INTERVALO = 5000; // troca a cada 5 segundos
+    const INTERVALO = 4000; // troca a cada 4 segundos
 
     function mostrarSlide(n) {
         slides.forEach(s => s.classList.remove('ativo'));
