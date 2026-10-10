@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FormiGeo-Topografia</title>
     <link rel="shortcut icon" href="img/FormiGeo-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/FormiGeo.css">
+    <link rel="stylesheet" href="css/FormiGeo.css?v=101">
 </head>
 <body>
 
@@ -29,14 +29,40 @@
             <p class="sub">Levantamentos topográficos, georreferenciamento e locação de obra com precisão técnica</p>
         </div>
 
-        <div class="hero-img">
-            <img src="img/fotoGeo.png" alt="Topografia e Georreferenciamento">
+        <!-- SLIDESHOW HERO -->
+        <div class="hero-slideshow">
+            <div class="slide ativo">
+                <img src="img/form.jpeg" alt="Formulário Topográfico">
+            </div>
+            <div class="slide">
+                <img src="img/gnss.jpeg" alt="Equipamento GNSS">
+            </div>
+            <div class="slide">
+                <img src="img/rtk.jpeg" alt="Equipamento RTK">
+            </div>
+            <div class="slide">
+                <img src="img/tirinha.jpeg" alt="Ilustração Topografia 1">
+            </div>
+            <div class="slide">
+                <img src="img/tirinha2.jpeg" alt="Ilustração Topografia 2">
+            </div>
+
+            <button class="slide-btn slide-prev" aria-label="Slide anterior">❮</button>
+            <button class="slide-btn slide-next" aria-label="Próximo slide">❯</button>
+
+            <div class="slide-indicadores">
+                <span class="ativo" data-index="0"></span>
+                <span data-index="1"></span>
+                <span data-index="2"></span>
+                <span data-index="3"></span>
+                <span data-index="4"></span>
+            </div>
         </div>
 
         <div class="intro-box">
             <h2>Por que a topografia é o primeiro passo</h2>
             <p>Antes de construir, parcelar, financiar ou regularizar um imóvel, é necessário conhecer com exatidão as divisas, declividade e localização do terreno no sistema geodésico oficial.</p>
-            <p>A FormiGeo oferece serviços completos de topografia e auxiliando na melhor decisão em seu projeto.</p>
+            <p>A FormiGeo oferece serviços completos de topografia auxiliando na melhor decisão em seu projeto.</p>
         </div>
 
         <h2 style="font-family:'Playfair Display',Georgia,serif;color:#DAA520;font-size:2rem;text-align:center;margin:3rem 0 2rem">Serviços disponíveis</h2>
@@ -86,15 +112,13 @@
                 </ul>
             </div>
         </div>
-        <!-- FECHA O servicos-topo-grid -->
 
         <div class="cta-box">
             <h2>Solicite um orçamento</h2>
             <p>Fale com a equipe da FormiGeo e receba uma proposta para o seu terreno</p>
-            <a href="https://wa.me/5541991875514?text=Olá! Gostaria de solicitar um orçamento de topografia." class="cta-btn">Consulte o Especialista</a>
+            <a href="https://wa.me/5541991875514?text=Olá! Gostaria de solicitar um orçamento de topografia." class="cta-btn" target="_blank">Consulte o Especialista</a>
         </div>
     </div>
-    <!-- FECHA O sp -->
 
     <!-- RODAPÉ SEPARADO -->
     <div id="rodape">
@@ -115,6 +139,6 @@
         </div>
     </div>
 
-    <script src="js/javascript.js"></script>
+<script src="js/javascript.js"></script>
 </body>
 </html>
