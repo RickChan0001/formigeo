@@ -73,10 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (timer) clearInterval(timer);
     }
 
-    // Botões ❮ ❯
-    if (btnNext) btnNext.addEventListener('click', () => { proximo();  iniciarAuto(); });
-    if (btnPrev) btnPrev.addEventListener('click', () => { anterior(); iniciarAuto(); });
-
     // Indicadores clicáveis
     indicadores.forEach((ponto, i) => {
         ponto.addEventListener('click', () => {
