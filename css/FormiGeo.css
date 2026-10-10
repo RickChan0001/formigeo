@@ -679,6 +679,7 @@ body {
     margin-bottom: 4rem;
     border: 2px solid #DAA520;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background: #1C1C1C; 
 }
 
 .hero-slideshow img {
@@ -687,7 +688,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 1;
