@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', -apple-system, sans-serif;
-    background: linear-gradient(135deg, #DAA520, #FFD700);
+    background: linear-gradient(135deg, #f0c30d, #000000);
 }
 
 /* ========== LOADING ANIMATION ========== */
@@ -110,7 +110,7 @@ body {
 /* ========== CABEÇALHO E MENU ========== */
 #cabeçalho {
     height: 120px;
-    background: linear-gradient(135deg, #DAA520, #FFD700);
+    background: linear-gradient(135deg, #e3b80c, #997d07);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -268,7 +268,7 @@ body {
 .sh h1 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 3rem;
-    color: #DAA520;
+    color: #000000d6;
     font-weight: 800;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
