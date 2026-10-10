@@ -157,24 +157,6 @@ body {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-/* ========== HERO IMAGEM ========== */
-.hero-img {
-    width: 100%;
-    height: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 4rem;
-    border: 2px solid #DAA520;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-.hero-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* ========== RODAPÉ SEPARADO ========== */
 #rodape {
     background: linear-gradient(135deg, #2C2C2C, #1C1C1C);
@@ -581,94 +563,6 @@ body {
     box-shadow: 0 8px 20px rgba(218, 165, 32, 0.3);
 }
 
-/* ========== RESPONSIVO ========== */
-@media (max-width: 768px) {
-    .sh h1 {
-        font-size: 2rem;
-    }
-    
-    .servicos-topo-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .cta-box {
-        padding: 2rem 1.5rem;
-    }
-    
-    .cta-box h2 {
-        font-size: 1.8rem;
-    }
-    
-    .hero-img {
-        height: 250px;
-    }
-    
-    #menu {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-    
-    #menu li {
-        display: block;
-        text-align: center;
-    }
-    
-    #menu a {
-        display: block;
-        padding: 8px 0;
-    }
-    
-    #anotacao0, #anotacao1, #anotacao2, #anotacao3,
-    #anotacao4, #anotacao5, #anotacao6, #anotacao7 {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .figuraF, .figuraW, .figuraM, .figuraC,
-    .figuraD, .figuraB, .figuraY, .figuraP {
-        margin: 0 auto;
-    }
-    
-    .rodape-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .rodape-info {
-        text-align: center;
-    }
-    
-    .rodape-linha {
-        width: 80%;
-        height: 1px;
-    }
-    
-    .contact-info-box {
-        margin: 2rem 1rem;
-        padding: 1.5rem;
-    }
-    
-    .contact-title {
-        font-size: 1.5rem;
-    }
-    
-    .contact-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .contact-icon {
-        font-size: 2rem;
-    }
-    
-    .btn-whatsapp {
-        font-size: 0.9rem;
-        padding: 0.8rem 1.2rem;
-    }
-}
-
 /* ========== SLIDESHOW HERO FORMIEGEO ========== */
 .hero-slideshow {
     position: relative;
@@ -679,7 +573,7 @@ body {
     margin-bottom: 4rem;
     border: 2px solid #DAA520;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    background: #1C1C1C; 
+    background: #1C1C1C !important;
 }
 
 .hero-slideshow img {
@@ -688,7 +582,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain !important;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 1;
@@ -771,8 +665,90 @@ body {
     background: #FFD700;
 }
 
-/* Responsivo do slideshow */
+/* ========== RESPONSIVO ========== */
 @media (max-width: 768px) {
+    .sh h1 {
+        font-size: 2rem;
+    }
+    
+    .servicos-topo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-box {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cta-box h2 {
+        font-size: 1.8rem;
+    }
+    
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    
+    #menu li {
+        display: block;
+        text-align: center;
+    }
+    
+    #menu a {
+        display: block;
+        padding: 8px 0;
+    }
+    
+    #anotacao0, #anotacao1, #anotacao2, #anotacao3,
+    #anotacao4, #anotacao5, #anotacao6, #anotacao7 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .figuraF, .figuraW, .figuraM, .figuraC,
+    .figuraD, .figuraB, .figuraY, .figuraP {
+        margin: 0 auto;
+    }
+    
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape-info {
+        text-align: center;
+    }
+    
+    .rodape-linha {
+        width: 80%;
+        height: 1px;
+    }
+    
+    .contact-info-box {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+    
+    .contact-title {
+        font-size: 1.5rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .contact-icon {
+        font-size: 2rem;
+    }
+    
+    .btn-whatsapp {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    /* Slideshow no mobile */
     .hero-slideshow {
         height: 250px;
         border-radius: 12px;
