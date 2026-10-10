@@ -669,7 +669,7 @@ body {
     }
 }
 
-/* ========== SLIDESHOW HERO ========== */
+/* ========== SLIDESHOW HERO FORMIEGEO ========== */
 .hero-slideshow {
     position: relative;
     width: 100%;
@@ -717,6 +717,7 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-slideshow:hover .slide-btn {
@@ -733,7 +734,7 @@ body {
 .slide-prev { left: 15px; }
 .slide-next { right: 15px; }
 
-/* Indicadores (bolinhas) */
+/* Indicadores (bolinhas douradas) */
 .slide-indicadores {
     position: absolute;
     bottom: 20px;
@@ -769,7 +770,7 @@ body {
     background: #FFD700;
 }
 
-/* Responsivo para o slideshow */
+/* Responsivo do slideshow */
 @media (max-width: 768px) {
     .hero-slideshow {
         height: 250px;
@@ -785,6 +786,11 @@ body {
 
     .slide-prev { left: 8px; }
     .slide-next { right: 8px; }
+
+    .slide-indicadores {
+        padding: 6px 12px;
+        gap: 8px;
+    }
 
     .slide-indicadores span {
         width: 10px;
