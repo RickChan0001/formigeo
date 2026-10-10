@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let indice = 0;
     let timer  = null;
-    const INTERVALO = 4000; // troca a cada 4 segundos
+    const INTERVALO = 5000; // troca a cada 5 segundos
 
     function mostrarSlide(n) {
         slides.forEach(s => s.classList.remove('ativo'));
