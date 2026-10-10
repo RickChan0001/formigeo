@@ -563,11 +563,11 @@ body {
     box-shadow: 0 8px 20px rgba(218, 165, 32, 0.3);
 }
 
-/* ========== SLIDESHOW HERO FORMIEGEO (ALTURA DINÂMICA) ========== */
+/* ========== SLIDESHOW HERO FORMIEGEO (FORMATO RETRATO) ========== */
 .hero-slideshow {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 420px;
     margin: 0 auto 4rem auto;
     border-radius: 20px;
     overflow: hidden;
@@ -603,7 +603,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 700px;
     object-fit: contain;
 }
 
@@ -765,10 +765,11 @@ body {
     /* Slideshow no mobile */
     .hero-slideshow {
         border-radius: 12px;
+        max-width: 90%;
     }
 
     .hero-slideshow .slide img {
-        max-height: 400px;
+        max-height: 500px;
     }
 
     .slide-btn {
