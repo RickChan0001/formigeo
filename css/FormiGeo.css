@@ -563,34 +563,48 @@ body {
     box-shadow: 0 8px 20px rgba(218, 165, 32, 0.3);
 }
 
-/* ========== SLIDESHOW HERO FORMIEGEO ========== */
+/* ========== SLIDESHOW HERO FORMIEGEO (ALTURA DINÂMICA) ========== */
 .hero-slideshow {
     position: relative;
     width: 100%;
-    height: 400px;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 4rem;
     border: 2px solid #DAA520;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    background: #1C1C1C !important;
+    background: #1C1C1C;
+    transition: height 0.5s ease-in-out;
 }
 
-.hero-slideshow img {
+/* Cada slide é uma camada absoluta */
+.hero-slideshow .slide {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain !important;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-slideshow img.ativo {
+.hero-slideshow .slide.ativo {
     opacity: 1;
     z-index: 2;
+    position: relative;
+}
+
+/* Imagem no tamanho natural, sem cortar */
+.hero-slideshow .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
 }
 
 /* Botões de navegação */
@@ -750,8 +764,11 @@ body {
 
     /* Slideshow no mobile */
     .hero-slideshow {
-        height: 250px;
         border-radius: 12px;
+    }
+
+    .hero-slideshow .slide img {
+        max-height: 400px;
     }
 
     .slide-btn {
