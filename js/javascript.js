@@ -34,10 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('🐜 FormiGeo - Site carregado com sucesso!');
 
-
-    /* ======================================================
-       2) SLIDESHOW AUTOMÁTICO DO HERO
-       ====================================================== */
     const slides      = document.querySelectorAll('.hero-slideshow .slide');
     const indicadores = document.querySelectorAll('.slide-indicadores span');
     const container   = document.querySelector('.hero-slideshow');
@@ -61,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function proximo()  { mostrarSlide(indice + 1); }
     function anterior() { mostrarSlide(indice - 1); }
-
+   
     function iniciarAuto() {
         pararAuto();
         timer = setInterval(proximo, INTERVALO);
