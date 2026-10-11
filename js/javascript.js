@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
        ====================================================== */
     const slides      = document.querySelectorAll('.hero-slideshow .slide');
     const indicadores = document.querySelectorAll('.slide-indicadores span');
-    const btnPrev     = document.querySelector('.slide-prev');
-    const btnNext     = document.querySelector('.slide-next');
     const container   = document.querySelector('.hero-slideshow');
 
     // Se essa página não tem slideshow, encerra sem erro
