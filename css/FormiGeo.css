@@ -800,15 +800,6 @@ section[id] {
     backdrop-filter: blur(4px);
 }
 
-.slide-btn:hover {
-    background: rgba(218, 165, 32, 0.9);
-    color: #1C1C1C;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.slide-prev { left: 10px; }
-.slide-next { right: 10px; }
-
 /* Responsivo: botões menores no mobile */
 @media (max-width: 768px) {
     .slide-btn {
