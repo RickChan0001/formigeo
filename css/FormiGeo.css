@@ -736,15 +736,6 @@ body {
         max-height: 500px;
     }
 
-    .slide-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
-        opacity: 1;
-    }
-
-    .slide-prev { left: 8px; }
-    .slide-next { right: 8px; }
 
     .slide-indicadores {
         padding: 6px 12px;
