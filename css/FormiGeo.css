@@ -747,3 +747,73 @@ body {
         height: 10px;
     }
 }
+
+/* Rolagem suave ao clicar nas âncoras */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menu fixo no topo ao rolar a página */
+#menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Compensa a altura do menu fixo ao pular para as seções */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Espaçamento entre as seções unificadas */
+#home, #anotacoes, #contato {
+    padding-top: 1rem;
+}
+
+#anotacoes {
+    padding-bottom: 2rem;
+}
+
+#contato {
+    padding-bottom: 2rem;
+}
+
+/* Botões do slideshow (prev/next) */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(28, 28, 28, 0.6);
+    color: #FFD700;
+    border: 1px solid #DAA520;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 11;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.slide-btn:hover {
+    background: rgba(218, 165, 32, 0.9);
+    color: #1C1C1C;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slide-prev { left: 10px; }
+.slide-next { right: 10px; }
+
+/* Responsivo: botões menores no mobile */
+@media (max-width: 768px) {
+    .slide-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+}
