@@ -779,27 +779,6 @@ section[id] {
     padding-bottom: 2rem;
 }
 
-/* Botões do slideshow (prev/next) */
-.slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(28, 28, 28, 0.6);
-    color: #FFD700;
-    border: 1px solid #DAA520;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 11;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(4px);
-}
-
 /* Responsivo: botões menores no mobile */
 @media (max-width: 768px) {
     .slide-btn {
