@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     waIcon.alt = 'Fale conosco pelo WhatsApp!';
     waIcon.style.width = '50px';
 
-    waButton.href = 'https://wa.me/5541988620572?text=Olá, vim através do site e quero saber mais sobre topografia';
+    waButton.href = 'https://wa.me/5541996900158?text=Olá, vim através do site e quero saber mais sobre topografia';
     waButton.target = '_blank';
     waButton.style.position = 'fixed';
     waButton.style.bottom = '20px';
